@@ -1,10 +1,15 @@
 package com.example.testetvalisation
 
-class Users(name: String) {
+class Users(id:Int,name: String,age:Int) {
 
+    var id :Int? = null
     var name : String? = null
+    var age: Int?=null
+
 
     init{
+        this.id = id
         this.name = name
+        this.age = age
     }
 }

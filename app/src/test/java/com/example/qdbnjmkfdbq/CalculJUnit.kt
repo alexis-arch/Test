@@ -11,27 +11,28 @@ class CalculJUnit {
     var calc = Calculs()
 
     @Test
-    fun add(){
-        assertThat( calc.add(2, 3), equalTo(5))
-        Assert.assertEquals(5, calc.add(2, 3))
+    fun calculAdd(){
+        assertThat( calc.calculAdd(2, 3), equalTo(5))
+        Assert.assertEquals(5, calc.calculAdd(2, 3))//Hamcrest
+
     }
 
     @Test
-    fun sub(){
-        assertThat( calc.sub(10, 5), equalTo(5))
-        Assert.assertEquals(5, calc.sub(10, 5))
+    fun calculSub(){
+        assertThat( calc.calculSub(10, 5), equalTo(5))
+        Assert.assertEquals(5, calc.calculSub(10, 5))//Hamcrest
     }
 
     @Test
-    fun div(){
-        assertThat( calc.div(25, 5), equalTo(5))
-        Assert.assertEquals(5, calc.div(25, 5))
+    fun calculDiv(){
+        assertThat( calc.calculDiv(25, 5), equalTo(5))
+        Assert.assertEquals(5, calc.calculDiv(25, 5))//Hamcrest
     }
 
     @Test
-    fun mul() {
-        assertThat( calc.mul(5, 5), equalTo(25))
-        Assert.assertEquals(25, calc.mul(5, 5))
+    fun calculMul() {
+        assertThat( calc.calculMul(5, 5), equalTo(25))
+        Assert.assertEquals(25, calc.calculMul(5, 5))//Hamcrest
     }
 
 }

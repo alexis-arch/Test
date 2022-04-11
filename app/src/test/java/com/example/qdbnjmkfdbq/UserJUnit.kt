@@ -19,14 +19,14 @@ class UserJUnit {
 
     @Test
     fun addUser(){
-        users?.add(Users("Marius"))
+        users?.add(Users(1,"Alexis",21))
         assertThat( users!!.size, equalTo(1) )
     }
 
     @Test
     fun deleteUser(){
-        users?.remove(Users("Marius"))
-        assertThat( users!!.size, equalTo(0) ) //Hamcrest
+        users?.remove(Users(1,"Alexis",21))
+        //assertThat( users!!.size, equalTo(0) ) //Hamcrest
         Assert.assertEquals(0, users!!.size)  // JUnit
     }
 
@@ -34,8 +34,11 @@ class UserJUnit {
     fun updateUser(){
         assertThat( users!!.size, equalTo(1) )
         val user = users!![0]
-        user.name = "Yoan"
+        user.name = "Alexis"
+        user.age = 21
         assertThat( users!![0].name, equalTo("Cedric") )
+        assertThat( users!![0].age, equalTo(24) )
+
     }
 
 

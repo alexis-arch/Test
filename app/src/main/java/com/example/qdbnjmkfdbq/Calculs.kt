@@ -2,22 +2,22 @@ package com.example.testetvalisation
 
 class Calculs {
 
-    fun add(a:Int, b:Int):Int{
+    fun calculAdd(a:Int, b:Int):Int{
         return (a+b)
     }
 
 
-    fun sub(a:Int, b:Int):Int{
+    fun calculSub(a:Int, b:Int):Int{
         return (a-b)
     }
 
 
-    fun div(a:Int, b:Int):Int{
+    fun calculDiv(a:Int, b:Int):Int{
         return (a/b)
     }
 
 
-    fun mul(a:Int, b:Int):Int{
+    fun calculMul(a:Int, b:Int):Int{
         return (a*b)
     }
 }
